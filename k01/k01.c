@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-
-extern double ave_online(double val,double ave, int a);
-extern double var_online(double val, double ave, double ave2, int a);
+double a;
+extern double ave_online(double val,double ave);
+extern double var_online(double val, double ave, double ave2);
 
 int main(void)
 {
@@ -12,7 +12,6 @@ int main(void)
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
-    int a=0;
 
     printf("input the filename of sample:");
     fgets(fname,sizeof(fname),stdin);
@@ -29,9 +28,9 @@ int main(void)
         sscanf(buf,"%lf",&val);
         a++;
         
-        var = var_online(a,val,ave,ave2);
-        ave = ave_online(a,val,ave);
-        ave2 = ave_online(a,pow(val,2),ave2);
+        var = var_online(val,ave,ave2);
+        ave = ave_online(val,ave);
+        ave2 = ave_online(pow(val,2),ave2);
         
 
     }
@@ -55,3 +54,17 @@ int main(void)
 
 }
 
+double ave_online(double val,double ave)
+{
+    double average;
+    average = ((a-1)*ave)/a + val/a;
+
+    return average;
+}
+double var_online(double val,double ave,double ave2)
+{
+    double var;
+    var = ((a-1)*ave2)/a + pow(val,2)/a - pow(((a-1)*ave)/a + val/a,2);
+
+    return var;
+}
