@@ -1,6 +1,6 @@
 # 課題1 レポート
 
-aa83988848 薗田光太郎
+bb35319024 篠隈健太
 
 ## 課題
 
@@ -43,30 +43,32 @@ aa83988848 薗田光太郎
 
 ## ソースコードの説明
 
-6: 標本の平均を求める関数
+46: 標本の平均aveを出力
 
-12: 標本の分散を求める関数
+47: 標本の分散varを出力
 
-41 43: 関数を用いて平均と分散を求める
+49: 推定値の平均を出力
 
-45 46: 標本分散を求めるために必要な標本の二乗の平均と標本平均を求める
+50: 推定値の分散を出力
 
-52: 母集団の分散を求める
+57: 関数ave_onlineの中身
 
-53: 母集団の平均を求める
-
-55: 標準誤差を求める
+64: 関数var_onlineの中身
 
 ## 入出力結果
 
-```
-input the filename of sample:../sample/heights_male.csv
-the filename of sample: ../sample/heights_male.csv
-sample mean：
-sample variance：
-population mean (estimated)：
-population variance (estimated)：
-```
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k01 (master)
+$ gcc k01.c -o k01.exe
+
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k01 (master)
+$ ./k01.exe
+input the filename of sample:C:\Users\bb35319024\Desktop\2020psp2\sample\heights_male.csv
+the filename of sample: C:\Users\bb35319024\Desktop\2020psp2\sample\heights_male.csv
+8.000000
+Average: 173.888750
+Var: 25.361711
+suitei_Average: 173.888750
+suitei_Var: 28.984813
 
 ## 修正履歴
 [comment #20200717]
