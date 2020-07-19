@@ -56,7 +56,7 @@ bb35319024 篠隈健太
 64: 関数var_onlineの中身
 
 ## 入出力結果
-
+```
 bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k01 (master)
 $ gcc k01.c -o k01.exe
 
@@ -69,6 +69,7 @@ Average: 173.888750
 Var: 25.361711
 suitei_Average: 173.888750
 suitei_Var: 28.984813
+```
 
 ## 修正履歴
 [comment #20200717]
@@ -85,3 +86,6 @@ suitei_Var: 28.984813
 - おそらく名前が被らないようにしているのだと思いますが, ave_online()など別の関数の引数では ave などmain関数内で使っているものと同じ名前を使っても大丈夫です. 
 - `pm`は標準誤差(standard error)でしょうか? 何を表しているかわかりやすくするために, std_error とかにしてはどうでしょうか. 
 
+
+[comment #20200719]
+- OKです
