@@ -1,6 +1,6 @@
 # 課題2 レポート
 
-aa83988848 薗田光太郎
+bb35319024 篠隈健太
 
 ## 課題
 
@@ -21,12 +21,27 @@ aa83988848 薗田光太郎
 
 ## ソースコードの説明
 
+31 32: A県B県の平均と分散を用いてそれぞれ標準化してYUDO_AとYUDO_Bを求める
+
+34 35: 求めたYUDO_AとYUDO_Bを引数にp_stdnormで確率密度関数を求めて掛ける
+
+44: L1を出力
+
+45: L2を出力
+
+52: 関数p_stdnormの中身
+
 ## 入出力結果
 
-```
-Likelihood for A：
-Likelihood for B：
-```
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k02 (master)
+$ gcc k02.c -o k02.exe
+
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k02 (master)
+$ ./k02.exe
+input the filename of sample:C:\Users\bb35319024\Desktop\2020psp2\sample\heights_male.csv
+the filename of sample: C:\Users\bb35319024\Desktop\2020psp2\sample\heights_male.csv
+L_A: 0.000006
+L_B: 0.000002
 
 ## 修正履歴
 
