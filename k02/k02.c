@@ -12,7 +12,7 @@ int main(void)
     char buf[256];
     FILE* fp;
     double L1=1,L2=1;
-    double MU_A=170.8,MU_B=169.7,sigma_A=5.43,sigma_B=5.5;
+    const double MU_A=170.8,MU_B=169.7,sigma_A=5.43,sigma_B=5.5;
 
     printf("input the filename of sample:");
     fgets(fname,sizeof(fname),stdin);

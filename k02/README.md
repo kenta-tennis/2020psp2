@@ -33,7 +33,6 @@ bb35319024 篠隈健太
 
 ## 入出力結果
 
-```
 bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k02 (master)
 $ gcc k02.c -o k02.exe
 
@@ -43,7 +42,6 @@ input the filename of sample:C:\Users\bb35319024\Desktop\2020psp2\sample\heights
 the filename of sample: C:\Users\bb35319024\Desktop\2020psp2\sample\heights_male.csv
 L_A: 0.000006
 L_B: 0.000002
-```
 
 ## 修正履歴
 [comment #20200720]
