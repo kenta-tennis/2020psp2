@@ -91,6 +91,21 @@ Num of dummy data: 5
 168.59
 166.74
 ```
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k03 (master)
+$ gcc k03.c -o k03.exe
+
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k03 (master)
+$ ./k03.exe 170.8 5.43 5
+============================================
+template mean: 170.8
+template standard deviation: 5.43
+Num of dummy data: 5
+============================================
+155.59
+175.93
+173.69
+161.64
+174.01
 
 コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す. 
 
