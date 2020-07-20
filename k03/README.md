@@ -1,6 +1,6 @@
 # 課題3 レポート
 
-aa83988848 薗田光太郎
+bb35319024 篠隈健太
 
 ## 課題
 
@@ -67,6 +67,10 @@ int main(int argc, char* argv[])
 
 ## ソースコードの説明
 
+29 30 31: コマンドラインを入力
+
+42: dummyを求める
+
 ## 入出力結果
 
 以下は例です． コンパイルするときに`-DCONST_SEED`をつけるとこうなります．
@@ -86,7 +90,12 @@ Num of dummy data: 5
 
 コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す．
 
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k03 (master)
+$ gcc k03.c -o k03.exe -DCONST_SEED
 
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k03 (master)
+$ ./k03.exe
+error
 
 ## 修正履歴
 
