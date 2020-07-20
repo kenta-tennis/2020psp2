@@ -75,7 +75,11 @@ int main(int argc, char* argv[])
 
 以下は例です． コンパイルするときに`-DCONST_SEED`をつけるとこうなります．
 
-```
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k03 (master)
+$ gcc k03.c -o k03.exe -DCONST_SEED
+
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k03 (master)
+$ ./k03.exe 170.8 5.43 5
 ============================================
 template mean: 170.8
 template standard deviation: 5.43
@@ -86,16 +90,7 @@ Num of dummy data: 5
 175.88
 168.59
 166.74
-```
 
-コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す．
-
-bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k03 (master)
-$ gcc k03.c -o k03.exe -DCONST_SEED
-
-bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k03 (master)
-$ ./k03.exe
-error
 
 ## 修正履歴
 
