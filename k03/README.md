@@ -74,7 +74,7 @@ int main(int argc, char* argv[])
 ## 入出力結果
 
 以下は例です． コンパイルするときに`-DCONST_SEED`をつけるとこうなります．
-
+```
 bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k03 (master)
 $ gcc k03.c -o k03.exe -DCONST_SEED
 
@@ -90,7 +90,11 @@ Num of dummy data: 5
 175.88
 168.59
 166.74
+```
 
+コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す. 
 
 ## 修正履歴
+[comment #20200720]
+- コンパイル時に`-DCONST_SEED`をつけなかったときの結果も載せてください. 
 
