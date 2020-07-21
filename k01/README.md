@@ -89,3 +89,6 @@ suitei_Var: 28.984813
 
 [comment #20200719]
 - OKです
+
+[comment #20200721 sonoda]
+- 課題1の完了を確認しました
