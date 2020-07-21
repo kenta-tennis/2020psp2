@@ -52,3 +52,6 @@ MU_Aなどは変数ではなく, 定数なので `const double` にした方が�
 
 [comment #20200720]
 - OKです.
+
+[comment #20200721 sonoda]
+- 課題2完了確認
