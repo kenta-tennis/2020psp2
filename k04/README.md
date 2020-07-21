@@ -1,6 +1,6 @@
 # 課題4 レポート
 
-aa83988848 薗田光太郎
+bb35319024 篠隈健太
 
 ## 課題
 
@@ -12,6 +12,11 @@ aa83988848 薗田光太郎
 
 ## ソースコードの説明
 
+6: ID、性別、身長の構造体sampleを宣言
+
+79~102: 必要なIDを聞いてそれが構造体sampleにあればそのIDと性別、身長を出力
+
+105: なければ"No data"と出力
 
 ## 入出力結果
 
@@ -36,6 +41,11 @@ Which ID's data do you want? : 45313124
 ---
 No data
 ```
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
+$ ./k04.exe
+input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
+the filename of sample heights: C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
+file close error
 
 ## 修正履歴
 

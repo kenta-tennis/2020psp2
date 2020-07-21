@@ -8,7 +8,7 @@ struct data
     int ID;
     int gender;
     double heights;
-}
+};
 
 int num=15;
 int main(void)
