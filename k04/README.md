@@ -47,6 +47,18 @@ input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\samp
 the filename of sample heights: C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
 file close error
 
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
+$ ./k04.exe
+input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
+the filename of sample heights: C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
+input the filename of sample ID ?:C:\Users\bb35319024\Desktop\2020psp2\sample\IDs.csv
+the filename of sample ID: C:\Users\bb35319024\Desktop\2020psp2\sample\IDs.csv
+Which ID's data do you want ?:45313125
+---
+ID : 45313125
+gender : Female
+heights : 165.62
+
 ## 修正履歴
 
 [comment #20200721 sonoda]

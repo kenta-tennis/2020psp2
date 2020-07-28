@@ -10,7 +10,7 @@ struct data
     double heights;
 };
 
-int num=15;
+int num=14;
 int main(void)
 {
     char fname[FILENAME_MAX];
@@ -27,7 +27,7 @@ int main(void)
     printf("the filename of sample heights: %s\n",fname);
 
     fp = fopen(fname,"r");
-    if(fp = NULL)
+    if(fp == NULL)
     {
         fputs("File open error\n",stderr);
         exit(EXIT_FAILURE);
