@@ -66,4 +66,34 @@ sample[a-1].gender = g;
 
 [comment #20200729 sonoda]
 - レポートの入出力例を整理しました．答えが間違っています．
-  (https://github.com/kenta-tennis/2020psp2#%E6%BC%94%E7%BF%92%E8%AA%B2%E9%A1%8C)を見ると，IDが45313125の女性の身長は152.4です．
+  https://github.com/kenta-tennis/2020psp2#%E6%BC%94%E7%BF%92%E8%AA%B2%E9%A1%8C
+  を見ると，IDが45313125の女性の身長は152.4です．
+
+[comment #20200731 sonoda]
+- ```
+  int num = 14;
+  struct data sample[num];
+  ```
+  としているので，`sample`の配列の要素数は14個ですが，`sample[0]` ~　`sample[13]`で14個です．`sample[14]`は存在しません．
+  
+  しかし，while文の中で値が代入される先の`sample[a]`は`a=a+1;`しているから`sample[1]`~`sample[14]`になっています．`a=a+1;`が無ければ`sample[0]` ~　`sample[13]`です．
+  
+  確保されていないメモリ領域を使おうとすると，バグります．
+  
+- というわけで，ためしに，`int num = 20;`などと余裕を持たせた上で，データを2つのファイルから読み取り終えたあとに，
+  ```
+  for (a=0; a< 20; a++){
+    printf("[%d] ID:%d, gender:%d, height:%lf\n, a, sample[a].ID, sample[a].gender, sample[a].heights);
+  }
+  ```
+  を追加して，構造体の中身を確認してみてください．
+  
+  https://github.com/kenta-tennis/2020psp2#%E6%BC%94%E7%BF%92%E8%AA%B2%E9%A1%8C
+  
+  と比べてみて，ずれていませんか？
+  
+  また，後ろのほうは与えられたデータが入っていないと思いますが，データが入っている配列の要素番号`a`が後ろに続くID探索のときの`j`の範囲を超えていませんか？
+- ずれの原因は，heights.csvの1行目はデータが書かれておらず，2行目からデータが書かれているからです．1行目も取り込んでしまっているからです．
+　heights.csvを読むwhile文の直前に，`fgets(buf,sizeof(buf),fp);`を追加すると，この部分で空読み（読んだものは使われない）になってくれます．
+ 
+- 後ろのほうのIDを探索するfor文の中の j と n　の働きがよくわかりません．説明を加えてください．
