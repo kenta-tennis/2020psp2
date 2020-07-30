@@ -23,30 +23,6 @@ bb35319024 篠隈健太
 例えば，ID 45313125のデータを調べたいとき，
 
 ```
-Input the filename of sample height : ../sample/heights.csv
-Input the filename of sample ID : ../sample/IDs.csv
-Which ID's data do you want? : 45313125
----
-ID : 45313125
-gender : Female
-height : 152.4
-```
-
-例えば，ID 45313124のデータを調べたいとき，
-
-```
-Input the filename of sample height : ../sample/heights.csv
-Input the filename of sample ID : ../sample/IDs.csv
-Which ID's data do you want? : 45313124
----
-No data
-```
-bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
-$ ./k04.exe
-input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
-the filename of sample heights: C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
-file close error
-
 bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
 $ ./k04.exe
 input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
@@ -58,6 +34,18 @@ Which ID's data do you want ?:45313125
 ID : 45313125
 gender : Female
 heights : 165.62
+```
+
+例えば，ID 45313124のデータを調べたいとき，
+
+```
+（ここに結果をコピペしてね）
+Input the filename of sample height : ../sample/heights.csv
+Input the filename of sample ID : ../sample/IDs.csv
+Which ID's data do you want? : 45313124
+---
+No data
+```
 
 ## 修正履歴
 
@@ -75,3 +63,7 @@ sample[a-1].gender = g;
 - (k04.c#L30) `if(fp = NULL)`では，fpにNULLが代入されてしまいます．`if(fp == NULL)`ではないでしょうか．
 - `int num = 15;`としていますが，15って何ですか．意味不明です．人数は14人です．
 - 各ループの最終回で配列の四角カッコの中の数字はどうなっていますか？定義した個数を超えてはいませんか？
+
+[comment #20200729 sonoda]
+- レポートの入出力例を整理しました．答えが間違っています．
+  (https://github.com/kenta-tennis/2020psp2#%E6%BC%94%E7%BF%92%E8%AA%B2%E9%A1%8C)を見ると，IDが45313125の女性の身長は152.4です．
