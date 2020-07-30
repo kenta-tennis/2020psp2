@@ -38,9 +38,9 @@ int main(void)
     {
         sscanf(buf,"%d,%lf",&GENDER,&HEIGHTS);
 
-        sample[a+1].gender = GENDER;
-        sample[a+1].heights = HEIGHTS;
         a = a+1;
+        sample[a].gender = GENDER;
+        sample[a].heights = HEIGHTS;
     }
 
     if(fclose(fp) == EOF)
@@ -66,9 +66,9 @@ int main(void)
 
     while(fgets(buf,sizeof(buf),fp) != NULL)
     {
+        a = a+1;
         sscanf(buf,"%d",&id);
         sample[a].ID = id;
-        a = a+1;
     }
 
     if(fclose(fp) == EOF)
