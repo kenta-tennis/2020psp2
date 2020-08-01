@@ -36,7 +36,7 @@ int main(void)
     fgets(buf,sizeof(buf),fp);
     while(fgets(buf,sizeof(buf),fp) != NULL)
     {
-        sscanf(buf,"%d,%lf",&GENDER,&HEIGHTS);
+        sscanf(buf,"%d , %lf",&GENDER,&HEIGHTS);
 
         sample[a-1].gender = GENDER;
         sample[a-1].heights = HEIGHTS;
