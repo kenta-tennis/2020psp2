@@ -17,7 +17,7 @@ int main(void)
     char buf[256];
     FILE*fp;
 
-    int GENDER, id, W_ID, a;
+    int GENDER, id, W_ID, a=0;
     struct data sample[num];
     double HEIGHTS;
 
@@ -33,14 +33,14 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    a = 0;
     fgets(buf,sizeof(buf),fp);
     while(fgets(buf,sizeof(buf),fp) != NULL)
     {
         sscanf(buf,"%d,%lf",&GENDER,&HEIGHTS);
 
-        sample[a].gender = GENDER;
-        sample[a].heights = HEIGHTS;
+        sample[a-1].gender = GENDER;
+        sample[a-1].heights = HEIGHTS;
+        a = a+1;
     }
 
     if(fclose(fp) == EOF)
@@ -68,6 +68,7 @@ int main(void)
     {
         sscanf(buf,"%d",&id);
         sample[a].ID = id;
+        a = a+1;
     }
 
     if(fclose(fp) == EOF)
