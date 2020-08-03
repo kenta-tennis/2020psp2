@@ -20,9 +20,6 @@ bb35319024 篠隈健太
 
 ## 入出力結果
 
-例えば，ID 45313125のデータを調べたいとき，
-
-```
 bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
 $ gcc k04.c -o k04.exe
 
@@ -32,6 +29,20 @@ input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\samp
 the filename of sample heights: C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
 input the filename of sample ID ?:C:\Users\bb35319024\Desktop\2020psp2\sample\IDs.csv
 the filename of sample ID: C:\Users\bb35319024\Desktop\2020psp2\sample\IDs.csv
+[0] ID:45313002, gender:1, height:183.870000
+[1] ID:45313010, gender:1, height:179.540000
+[2] ID:45313001, gender:2, height:166.900000
+[3] ID:45314011, gender:1, height:173.620000
+[4] ID:45322004, gender:2, height:165.620000
+[5] ID:45313090, gender:1, height:167.830000
+[6] ID:45313125, gender:2, height:152.400000
+[7] ID:45323002, gender:2, height:163.240000
+[8] ID:45321001, gender:2, height:161.390000
+[9] ID:45313003, gender:1, height:174.380000
+[10] ID:45322005, gender:1, height:171.380000
+[11] ID:45323111, gender:2, height:152.280000
+[12] ID:45319099, gender:1, height:169.390000
+[13] ID:45318088, gender:1, height:171.100000
 Which ID's data do you want ?:45313125
 ---
 ID : 45313125
@@ -47,9 +58,25 @@ input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\samp
 the filename of sample heights: C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
 input the filename of sample ID ?:C:\Users\bb35319024\Desktop\2020psp2\sample\IDs.csv
 the filename of sample ID: C:\Users\bb35319024\Desktop\2020psp2\sample\IDs.csv
-Which ID's data do you want ?:45313124
+[0] ID:45313002, gender:1, height:183.870000
+[1] ID:45313010, gender:1, height:179.540000
+[2] ID:45313001, gender:2, height:166.900000
+[3] ID:45314011, gender:1, height:173.620000
+[4] ID:45322004, gender:2, height:165.620000
+[5] ID:45313090, gender:1, height:167.830000
+[6] ID:45313125, gender:2, height:152.400000
+[7] ID:45323002, gender:2, height:163.240000
+[8] ID:45321001, gender:2, height:161.390000
+[9] ID:45313003, gender:1, height:174.380000
+[10] ID:45322005, gender:1, height:171.380000
+[11] ID:45323111, gender:2, height:152.280000
+[12] ID:45319099, gender:1, height:169.390000
+[13] ID:45318088, gender:1, height:171.100000
+Which ID's data do you want ?:45313002
 ---
-No data
+ID : 45313002
+gender : Male
+heights : 183.87
 
 bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
 $ gcc k04.c -o k04.exe
@@ -60,11 +87,23 @@ input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\samp
 the filename of sample heights: C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
 input the filename of sample ID ?:C:\Users\bb35319024\Desktop\2020psp2\sample\IDs.csv
 the filename of sample ID: C:\Users\bb35319024\Desktop\2020psp2\sample\IDs.csv
-Which ID's data do you want ?:45314011
+[0] ID:45313002, gender:1, height:183.870000
+[1] ID:45313010, gender:1, height:179.540000
+[2] ID:45313001, gender:2, height:166.900000
+[3] ID:45314011, gender:1, height:173.620000
+[4] ID:45322004, gender:2, height:165.620000
+[5] ID:45313090, gender:1, height:167.830000
+[6] ID:45313125, gender:2, height:152.400000
+[7] ID:45323002, gender:2, height:163.240000
+[8] ID:45321001, gender:2, height:161.390000
+[9] ID:45313003, gender:1, height:174.380000
+[10] ID:45322005, gender:1, height:171.380000
+[11] ID:45323111, gender:2, height:152.280000
+[12] ID:45319099, gender:1, height:169.390000
+[13] ID:45318088, gender:1, height:171.100000
+Which ID's data do you want ?:45313124
 ---
-ID : 45314011
-gender : Male
-heights : 173.62
+No data
 
 ## 修正履歴
 

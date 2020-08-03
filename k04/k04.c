@@ -10,7 +10,7 @@ struct data
     double heights;
 };
 
-int num=15;
+int num=14;
 int main(void)
 {
     char fname[FILENAME_MAX];
@@ -72,6 +72,11 @@ int main(void)
         a++;
     }
 
+    for (a=0; a<14; a++)
+    {
+    printf("[%d] ID:%d, gender:%d, height:%lf\n", a, sample[a].ID, sample[a-1].gender, sample[a-1].heights);
+    }
+
     if(fclose(fp) == EOF)
     {
         fputs("file close error\n",stderr);
@@ -87,7 +92,7 @@ int main(void)
     {
         if(sample[j].ID == W_ID)
         {
-            if(sample[j-1].gender == 1)
+            if(sample[j].gender == 1)
             {
                 printf("---\nID : %d\ngender : Male\nheights : %.2lf\n",sample[j].ID,sample[j-1].heights);
             }
