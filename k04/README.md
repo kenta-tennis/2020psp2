@@ -24,6 +24,9 @@ bb35319024 篠隈健太
 
 ```
 bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
+$ gcc k04.c -o k04.exe
+
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
 $ ./k04.exe
 input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
 the filename of sample heights: C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
@@ -33,19 +36,35 @@ Which ID's data do you want ?:45313125
 ---
 ID : 45313125
 gender : Female
-heights : 165.62
-```
+heights : 152.40
 
-例えば，ID 45313124のデータを調べたいとき，
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
+$ gcc k04.c -o k04.exe
 
-```
-（ここに結果をコピペしてね）
-Input the filename of sample height : ../sample/heights.csv
-Input the filename of sample ID : ../sample/IDs.csv
-Which ID's data do you want? : 45313124
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
+$ ./k04.exe
+input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
+the filename of sample heights: C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
+input the filename of sample ID ?:C:\Users\bb35319024\Desktop\2020psp2\sample\IDs.csv
+the filename of sample ID: C:\Users\bb35319024\Desktop\2020psp2\sample\IDs.csv
+Which ID's data do you want ?:45313124
 ---
 No data
-```
+
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
+$ gcc k04.c -o k04.exe
+
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
+$ ./k04.exe
+input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
+the filename of sample heights: C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
+input the filename of sample ID ?:C:\Users\bb35319024\Desktop\2020psp2\sample\IDs.csv
+the filename of sample ID: C:\Users\bb35319024\Desktop\2020psp2\sample\IDs.csv
+Which ID's data do you want ?:45314011
+---
+ID : 45314011
+gender : Male
+heights : 173.62
 
 ## 修正履歴
 
