@@ -20,9 +20,12 @@ bb35319024 篠隈健太
 
 ## 入出力結果
 
+```
 bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
 $ gcc k04.c -o k04.exe
+```
 
+```
 bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
 $ ./k04.exe
 input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
@@ -48,10 +51,14 @@ Which ID's data do you want ?:45313125
 ID : 45313125
 gender : Female
 heights : 152.40
+```
 
+```
 bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
 $ gcc k04.c -o k04.exe
+```
 
+```
 bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
 $ ./k04.exe
 input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
@@ -77,10 +84,14 @@ Which ID's data do you want ?:45313002
 ID : 45313002
 gender : Male
 heights : 183.87
+```
 
+```
 bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
 $ gcc k04.c -o k04.exe
+```
 
+```
 bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp2/k04 (master)
 $ ./k04.exe
 input the filename of sample heights ?:C:\Users\bb35319024\Desktop\2020psp2\sample\heights.csv
@@ -104,6 +115,7 @@ the filename of sample ID: C:\Users\bb35319024\Desktop\2020psp2\sample\IDs.csv
 Which ID's data do you want ?:45313124
 ---
 No data
+```
 
 ## 修正履歴
 
@@ -155,3 +167,6 @@ sample[a-1].gender = g;
 　heights.csvを読むwhile文の直前に，`fgets(buf,sizeof(buf),fp);`を追加すると，この部分で空読み（読んだものは使われない）になってくれます．
  
 - 後ろのほうのIDを探索するfor文の中の j と n　の働きがよくわかりません．説明を加えてください．
+
+[comment #20200804 sonoda]
+- OKです．課題4の完了を確認しました
